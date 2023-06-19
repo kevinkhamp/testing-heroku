@@ -1,0 +1,30 @@
+{
+  "name": "the-finale",
+  "version": "1.0.0",
+  "description": "The final project for the bootcamp",
+  "main": "server/server.js",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
+    "dev": "concurrently \"npm run client\" \"npm run server\" ",
+    "build": "cd client && npm run build",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server && nodemon server.js",
+    "seed": "cd server && npm run seed",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.15",
+    "graphql": "^16.6.0"
+  }
+}

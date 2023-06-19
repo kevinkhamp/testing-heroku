@@ -1,0 +1,13 @@
+.profile-header {
+    font-size: 30px;
+}
+
+.about {
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+
+.title {
+    font-weight: bold;
+}
